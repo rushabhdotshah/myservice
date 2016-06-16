@@ -10,20 +10,18 @@ RUN apt-get install -y nodejs npm curl
 #
 # add application sources
 #
-RUN mkdir -p /app
-WORKDIR /app
-COPY package.json /app/package.json
-RUN cd /app; npm install
+RUN mkdir -p /svc
+WORKDIR /svc
+COPY package.json /svc/package.json
+RUN cd /svc; npm install
 
-COPY . /app
+COPY . /svc
 #
 # Expose the default port
 #
-EXPOSE  3000
+EXPOSE  4000
 #
 # Start command
 #
 
-
-#CMD ["node", "app.js"]
 CMD ["npm", "start"]
