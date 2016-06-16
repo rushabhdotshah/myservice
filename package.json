@@ -1,0 +1,28 @@
+{
+  "name": "myservice",
+  "version": "1.0.0",
+  "description": "Test node service w/t express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rushabhdotshah/myservice.git"
+  },
+  "keywords": [
+    "nodejs",
+    "aws",
+    "docker"
+  ],
+  "author": "rush",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rushabhdotshah/myservice/issues"
+  },
+  "homepage": "https://github.com/rushabhdotshah/myservice#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
