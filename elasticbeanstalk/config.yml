@@ -1,0 +1,11 @@
+branch-defaults:
+  master:
+    environment: myservice-dev-my-group-name
+    group_suffix: my-group-name
+global:
+  application_name: aws-exp
+  default_ec2_keyname: aws-eb
+  default_platform: 64bit Amazon Linux 2015.03 v1.4.6 running Docker 1.6.2
+  default_region: us-west-2
+  profile: null
+  sc: git
